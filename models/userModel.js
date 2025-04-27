@@ -16,7 +16,7 @@ const userSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
-    refreshToken: Array,
+    refreshToken: [String], // <--- THIS MUST EXIST
     delFlag: {
       type: Boolean,
       required: true,
